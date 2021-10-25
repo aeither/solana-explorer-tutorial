@@ -1,6 +1,5 @@
 import BN from "bn.js";
-
-export const LAMPORTS_PER_SOL = 1000000000;
+import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 
 export function lamportsToSol(lamports: number | BN): number {
   if (typeof lamports === "number") {
