@@ -69,16 +69,16 @@ export function AccountHeader({ data }: { data?: Data }) {
               <Td isNumeric>{data?.pubkey.toBase58()}</Td>
             </Tr>
             <Tr>
-              <Th>Current Supply</Th>
-              <Th isNumeric>{detailsData?.parsed.info.supply}</Th>
+              <Td>Current Supply</Td>
+              <Td isNumeric>{detailsData?.parsed.info.supply}</Td>
             </Tr>
             <Tr>
-              <Th>Mint Authority</Th>
-              <Th isNumeric>{detailsData?.parsed.info.mintAuthority}</Th>
+              <Td>Mint Authority</Td>
+              <Td isNumeric>{detailsData?.parsed.info.mintAuthority}</Td>
             </Tr>
             <Tr>
-              <Th>Decimals</Th>
-              <Th isNumeric>{detailsData?.parsed.info.decimals}</Th>
+              <Td>Decimals</Td>
+              <Td isNumeric>{detailsData?.parsed.info.decimals}</Td>
             </Tr>
           </Tbody>
         </Table>
@@ -96,16 +96,16 @@ export function AccountHeader({ data }: { data?: Data }) {
             <Td isNumeric>{data?.pubkey.toBase58()}</Td>
           </Tr>
           <Tr>
-            <Th>Mint</Th>
-            <Th isNumeric>{detailsData?.parsed.info.mint}</Th>
+            <Td>Mint</Td>
+            <Td isNumeric>{detailsData?.parsed.info.mint}</Td>
           </Tr>
           <Tr>
-            <Th>Owner</Th>
-            <Th isNumeric>{detailsData?.parsed.info.owner}</Th>
+            <Td>Owner</Td>
+            <Td isNumeric>{detailsData?.parsed.info.owner}</Td>
           </Tr>
           <Tr>
-            <Th>State</Th>
-            <Th isNumeric>{detailsData?.parsed.info.state}</Th>
+            <Td>State</Td>
+            <Td isNumeric>{detailsData?.parsed.info.state}</Td>
           </Tr>
         </Tbody>
       </Table>

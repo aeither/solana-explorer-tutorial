@@ -1,14 +1,6 @@
 import { Connection, clusterApiUrl } from "@solana/web3.js";
 import { useEffect, useState } from "react";
-import {
-  Table,
-  Tbody,
-  Tr,
-  Th,
-  Td,
-  Heading,
-  VStack,
-} from "@chakra-ui/react";
+import { Table, Tbody, Tr, Th, Td, Heading, VStack } from "@chakra-ui/react";
 
 export const SAMPLE_HISTORY_HOURS = 6;
 
@@ -21,7 +13,7 @@ export default function TpsCard() {
   const [tpsStats, setTpsStats] = useState<TpsStats>();
   useEffect(() => {
     getTpsStats();
-  },[]);
+  }, []);
   async function getTpsStats() {
     const url = clusterApiUrl("devnet").replace("api", "explorer-api");
     const connection = new Connection(url);
@@ -59,8 +51,8 @@ export default function TpsCard() {
                 <Td isNumeric>{tpsStats.transactionCount}</Td>
               </Tr>
               <Tr>
-                <Th>Transactions per second (TPS)</Th>
-                <Th isNumeric>{tpsStats.averageTps}</Th>
+                <Td>Transactions per second (TPS)</Td>
+                <Td isNumeric>{tpsStats.averageTps}</Td>
               </Tr>
             </Tbody>
           </Table>

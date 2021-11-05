@@ -1,15 +1,7 @@
 import { Connection, clusterApiUrl } from "@solana/web3.js";
 import { useEffect, useState } from "react";
 import { displayTimestampUtc } from "./utils/date";
-import {
-  Table,
-  Tbody,
-  Tr,
-  Th,
-  Td,
-  Heading,
-  VStack,
-} from "@chakra-ui/react";
+import { Table, Tbody, Tr, Th, Td, Heading, VStack } from "@chakra-ui/react";
 
 export const SAMPLE_HISTORY_HOURS = 6;
 
@@ -69,18 +61,17 @@ export default function StatsCard() {
                 <Tr>
                   <Td>Cluster time</Td>
                   <Td isNumeric>
-                    {" "}
                     {displayTimestampUtc(clusterStats.blockTime)}
                   </Td>
                 </Tr>
               )}
               <Tr>
-                <Th>Epoch</Th>
-                <Th isNumeric>{clusterStats.currentEpoch}</Th>
+                <Td>Epoch</Td>
+                <Td isNumeric>{clusterStats.currentEpoch}</Td>
               </Tr>
               <Tr>
-                <Th>Epoch progress</Th>
-                <Th isNumeric>{clusterStats.epochProgress}</Th>
+                <Td>Epoch progress</Td>
+                <Td isNumeric>{clusterStats.epochProgress}</Td>
               </Tr>
             </Tbody>
           </Table>

@@ -1,6 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 
-const BG_COLOR = "#FFF0FB";
+const BG_COLOR = "purple.300";
 
 const config = {
   initialColorMode: "light",
@@ -11,6 +11,7 @@ const styles = {
   global: () => ({
     body: {
       bg: BG_COLOR,
+      color: "black",
     },
   }),
 };
