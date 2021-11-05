@@ -15,12 +15,12 @@ export default function App() {
       <Container maxW="3xl">
 
         {/* Get SOL price from Coingecko */}
-        <PriceCard />
+        {/* <PriceCard /> */}
 
         {/* Get Data from web3js */}
-        <SupplyCard />
+        {/* <SupplyCard />
         <StatsCard />
-        <TpsCard />
+        <TpsCard /> */}
 
         {/* Try examples addresses and Txs with Search */}
         {/* <p>Spl Mint (Token): 2Zzh3VH5T3smrkp4BtKFtszN3Mt7aAr6bUy6LQVc8ZKi</p>
@@ -29,10 +29,10 @@ export default function App() {
           Tx:
           4Rk1q5xG7gURFhLhHH3QGTWpsJCfPiHgj8rbKc2kcCiFkGozjBUNbWuHGfxkfsev1jGhWkvrQusgByT1Gf7GQEDm
         </p> */}
-        <SearchCard />
+        {/* <SearchCard /> */}
 
         {/* Get user SOL balance with Phantom Wallet */}
-        <BalanceCard />
+        {/* <BalanceCard /> */}
       </Container>
     </>
   );
