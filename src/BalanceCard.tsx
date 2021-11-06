@@ -97,7 +97,7 @@ export default function BalanceCard() {
         <>
           <Heading size="md">Your Address:</Heading>
           <Text>{provider.publicKey?.toBase58()}</Text>
-          <Text>{balance}</Text>
+          <Text>{balance} SOL</Text>
 
           <Button onClick={disconnect}>Disconnect</Button>
           <Text fontWeight="bold">Logs</Text>
