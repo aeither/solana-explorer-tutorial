@@ -92,7 +92,7 @@ export default function BalanceCard() {
   };
 
   return (
-    <VStack w="100%" align="start" background="white" rounded="lg" p="4">
+    <VStack w="100%" align="start" background="white" rounded="lg" p="4" mt="4" mb="28">
       {provider && provider.publicKey ? (
         <>
           <Heading size="md">Your Address:</Heading>
