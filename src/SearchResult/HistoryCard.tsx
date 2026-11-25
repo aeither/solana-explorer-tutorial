@@ -4,7 +4,7 @@ import {
   PublicKey,
   ConfirmedSignatureInfo,
 } from "@solana/web3.js";
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState } from "react";
 import Moment from "react-moment";
 import { Table, Tbody, Tr, Td, Heading, VStack } from "@chakra-ui/react";
 
@@ -25,7 +25,7 @@ export default function HistoryCard({ pubkey }: { pubkey: PublicKey }) {
     const options = {
       limit: 25,
     };
-    const fetched = await connection.getConfirmedSignaturesForAddress2(
+    const fetched = await connection.getSignaturesForAddress(
       pubkey,
       options
     );
